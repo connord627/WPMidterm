@@ -13,6 +13,8 @@
 <body>
 
 	<script language="javascript">
+		var strout;
+		//document.getElementById("text").style.visibility='hidden';
 		function validate()
 		{
 			//check fname
@@ -51,7 +53,8 @@
 
 			//check email
 			valemail = new RegExp(/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/);
-			if (document.data.email.value == "" || !valemail.test(document.data.email.value)) // check if field is blank
+			inputemail = document.data.email.value;
+			if (inputemail == "" || !valemail.test(inputemail)) // check if field is blank
 			{
 				alert("Must enter a valid email"); // tell user what is wrong
 
@@ -100,11 +103,45 @@
 				alert("Must select the number of children"); // tell user what is wrong
 				return false;
 			}
+
+			ticketnum = Math.floor(Math.random() * (1000 - 1) + 1);
+			strout = ("Your ticket number is: " + ticketnum + "\nYour name is: " + first + " " + last + "\nYour phone number is: " + phonenum + "\nYour email is: " + inputemail + "\nYou will be arriving at " + arrivaltime + "\n");
+			if (tourchecked)
+			{
+				strout += "You will be attending a tour of the facilities. There will be an additional $5 fee per person\n";
+			}
+
+			if (pickingchecked)
+			{
+				strout += "You will be apple picking\n";
+			}
+
+			if (storechecked)
+			{
+				strout += "You will be visiting our store and gift shop\n";
+			}
+
+			strout += ("There are " + numpeople + " people in your group\n")
+
+			if (numchild > 0)
+			{
+				strout += "There are " + numchild + " children in your group\n"
+			}
+
+			if (document.getElementById("yes").checked)
+			{
+				strout += ("Its someone's birthday!")
+			}
 			
-			
+			//document.getElementById("text").style.visibility='visible';
 			return true;
 
 		}
+
+		//document.getElementById("text").innerHTML = strout;
+		
+		
+
 
 	</script>
 	
@@ -112,7 +149,7 @@
 		<h1>
 			Come see us!
 		</h1>
-		<form onsubmit = "return validate()" name="data">
+		<form name="data" onsubmit = "return validate()">
 
 			First Name: <input type="text" id="fname" name="fname"><br>
 			Last Name: <input type="text" id="lname" name="lname"><br>
@@ -189,6 +226,8 @@
 
 		</form>
 	</div>
+
+	<div id = "text"></div>
 
 	<!--- Code for the header, Standard across all pages --->
 	<div id = "header">
