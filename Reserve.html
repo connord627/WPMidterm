@@ -38,8 +38,9 @@
 			}
 
 			//check phone
+			phonenum = document.data.phone.value;
 			valphone = new RegExp(/^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4,6}$/im);
-			if (document.data.phone.value == "" || !valphone.test(document.data.phone.value)) 
+			if (phonenum == "" || !valphone.test(phonenum)) 
 			{
 				alert("Must enter a valid phone number"); // tell user what is wrong
 
@@ -58,10 +59,53 @@
 				document.data.email.select(); // highlight text in the box
 				return false;
 			}
+
+			//check arrival
+			arrivaltime = document.getElementById("times").options[document.getElementById("times").selectedIndex].value;
+			//console.log(arrivaltime);
+			//document.write(arrivaltime);
+			if (arrivaltime == "none") // check if field is blank
+			{
+				alert("Must select a time"); // tell user what is wrong
+				return false;
+			}
+
+			//check activities
+			
+			tourchecked = document.data.tour.checked;
+			pickingchecked = document.data.picking.checked;
+			storechecked = document.data.store.checked;
+			if (!tourchecked && !pickingchecked && !storechecked) // check if field is blank
+			{
+				alert("Must select an activity"); // tell user what is wrong
+				return false;
+			}
+
+			//check people
+			numpeople = document.getElementById("people").options[document.getElementById("people").selectedIndex].value;
+			//console.log(arrivaltime);
+			//document.write(arrivaltime);
+			if (numpeople == "none") // check if field is blank
+			{
+				alert("Must select the number of people"); // tell user what is wrong
+				return false;
+			}
+
+			//check children
+			numchild = document.getElementById("children").options[document.getElementById("children").selectedIndex].value;
+			//console.log(arrivaltime);
+			//document.write(arrivaltime);
+			if (numchild == "none") // check if field is blank
+			{
+				alert("Must select the number of children"); // tell user what is wrong
+				return false;
+			}
+			
 			
 			return true;
 
 		}
+
 	</script>
 	
 	<div id="page-content">
@@ -77,15 +121,15 @@
 			Choose your arrival time:
 			<select name="times" id="times">
 				<option value="none"></option>
-				<option value="nine">9:00am</option>
-				<option value="ten">10:00am</option>
-				<option value="eleven">11:00am</option>
-				<option value="twelve">12:00pm</option>
-				<option value="one">1:00pm</option>
-				<option value="two">2:00pm</option>
-				<option value="three">3:00pm</option>
-				<option value="four">4:00pm</option>
-				<option value="five">5:00pm</option>
+				<option value="9am">9:00am</option>
+				<option value="10am">10:00am</option>
+				<option value="11am">11:00am</option>
+				<option value="12pm">12:00pm</option>
+				<option value="1pm">1:00pm</option>
+				<option value="2pm">2:00pm</option>
+				<option value="3pm">3:00pm</option>
+				<option value="4pm">4:00pm</option>
+				<option value="5pm">5:00pm</option>
 			</select> <br> <br>
 			What will you be doing on your visit?:<br>
 			Apple Orchard Tour: <input type="checkbox" name="tour"> <br>
@@ -96,44 +140,44 @@
 			How many total people will you be with?:
 			<select name="people" id="people">
 				<option value="none"></option>
-				<option value="one">1</option>
-				<option value="two">2</option>
-				<option value="three">3</option>
-				<option value="four">4</option>
-				<option value="five">5</option>
-				<option value="six">6</option>
-				<option value="seven">7</option>
-				<option value="eight">8</option>
-				<option value="nine">9</option>
-				<option value="ten">10</option>
-				<option value="eleven">11</option>
-				<option value="twelve">12</option>
-				<option value="thirteen">13</option>
-				<option value="fourteen">14</option>
-				<option value="fifteen">15</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
 			</select> 
 
 
 			<strong>*NOTE: if your party has more than 15 people, please contact us <a href="Contact.html">here</a>. </strong>
 
 			<br> How many children in the group?:
-			<select name="people" id="people">
+			<select name="children" id="children">
 				<option value="none"></option>
-				<option value="zero">0</option>
-				<option value="one">1</option>
-				<option value="two">2</option>
-				<option value="three">3</option>
-				<option value="four">4</option>
-				<option value="five">5</option>
-				<option value="six">6</option>
-				<option value="seven">7</option>
-				<option value="eight">8</option>
-				<option value="nine">9</option>
-				<option value="ten">10</option>
-				<option value="eleven">11</option>
-				<option value="twelve">12</option>
-				<option value="thirteen">13</option>
-				<option value="fourteen">14</option>
+				<option value="0">0</option>
+				<option value="1">1</option>
+				<option value="2">2</option>
+				<option value="3">3</option>
+				<option value="4">4</option>
+				<option value="5">5</option>
+				<option value="6">6</option>
+				<option value="7">7</option>
+				<option value="8">8</option>
+				<option value="9">9</option>
+				<option value="10">10</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
 			</select>
 			<br> <br>
 			Is it someones birthday?: <br>
