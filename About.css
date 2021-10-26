@@ -1,2 +1,68 @@
 /* CSS Document */
 
+body{
+
+	padding: 20px;
+}
+
+h3 {
+text-align: center;
+font-size: 30px;
+}
+
+.whoarewe{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+	border: solid 3px #000; 
+	border-radius: 20px; 
+	padding-left: 15px; 
+	padding-right: 15px; 
+	padding-bottom: 20px; 
+	text-align: center;
+	width: 95%
+}
+
+.founders{
+
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+	border: solid 3px #000; 
+	border-radius: 20px; 
+	padding-left: 15px; 
+	padding-right: 15px; 
+	padding-bottom: 20px;
+	width: 95%
+ 
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the four columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
