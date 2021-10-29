@@ -120,3 +120,9 @@ li a {
 	padding: 12px;
 	margin-top: 6px;
 }
+
+/*changes the color of the logo and instagram when hovering*/
+#ig:hover, #logo:hover {
+		filter: invert(100%); 
+		-webkit-filter: invert(100%);
+}
