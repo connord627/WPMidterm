@@ -33,7 +33,7 @@ body:before {
 }
 
 /*margin of content (non-header information) - its 30px when the header is collapsed, 60 when not*/
-#content{
+#all-content{
   margin: 30px;	
 }
 
@@ -129,7 +129,7 @@ li:first-child {
   .nav-menu li {
     display: block;
   }
-  #page-content{
+  #all-content {
     margin: 60px;	
   }
 }
