@@ -134,47 +134,6 @@ li:first-child {
   }
 }
 
-/*Button Types*/
-/*these are three button types standardized across the site*/
-#button1{
-	background-image: url("button1.png");
-	background-size: 200px;
-	line-height: 17px;
-	text-align: center;
-	height: 50px;
-	width: 200px;
-	border-radius: 14px;
-	box-sizing: border-box;
-	padding: 12px;
-	margin-top: 6px;
-}
-
-#button2{
-	background-image: url("button2.png");
-	background-size: 200px;
-	line-height: 17px;
-	text-align: center;
-	height: 50px;
-	width: 200px;
-	border-radius: 14px;
-	box-sizing: border-box;
-	padding: 12px;
-	margin-top: 6px;
-}
-
-#button3{
-	background-image: url("button3.png");
-	background-size: 200px;
-	line-height: 17px;
-	text-align: center;
-	height: 50px;
-	width: 200px;
-	border-radius: 14px;
-	box-sizing: border-box;
-	padding: 12px;
-	margin-top: 6px;
-}
-
 /*changes the color of the logo and instagram when hovering*/
 #ig:hover, .logo:hover {
 		filter: invert(100%); 
