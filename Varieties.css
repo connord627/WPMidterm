@@ -1,2 +1,39 @@
 /* CSS Document */
 
+#apple_varieties {
+	display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+	border: solid 3px #000; 
+	border-radius: 20px; 
+	padding-left: 15px; 
+	padding-right: 15px; 
+	padding-bottom: 20px; 
+	text-align: center;
+	width: 100%
+}
+
+#apple_varieties td, #apple_varieties th {
+	border-bottom: solid 3px #000;
+	padding: 10px;
+
+
+}
+
+#apple_varieties tr: {
+	background-color: #800020;
+
+}
+
+#apple_varieties tr:hover {
+}
+
+#apple_varieties th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #800020;
+  color: white;
+}
+

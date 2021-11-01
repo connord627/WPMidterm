@@ -44,7 +44,7 @@ font-size: 30px;
 /* Create four equal columns that floats next to each other */
 .column {
   float: left;
-  width: 20%;
+  width: 23%;
   padding: 10px;
   border: solid 3px #000;
   border-radius: 20px;
