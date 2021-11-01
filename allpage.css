@@ -75,7 +75,7 @@ input[type="checkbox"] {
 .nav-menu {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 2em;
   align-items: center;
   margin: .4rem;
 }
