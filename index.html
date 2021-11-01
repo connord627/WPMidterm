@@ -4,6 +4,29 @@
 <meta charset="UTF-8">
 <title>Queen Orchards: A Pick Your Own Apple Destination</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+	h1{
+		font-size: 12vw;
+		font-weight: 400;
+		line-height: 1.2;
+	}
+	#main-image-move{
+		position: relative;
+		top: -42vw;
+	}
+	#image-scale{
+		max-width:38%;
+		padding:1%;
+		position: relative;
+		z-index: 2;
+	}
+	#move-header{
+		position: relative;
+		top: 42vw;
+		left: 25vw;
+		z-index: 1;
+	}
+</style>
 <link href="allpage.css" rel="stylesheet" type="text/css">
 <link href="index.css" rel="stylesheet" type="text/css">
 <link rel="stylesheet" href="https://use.typekit.net/cev6nlr.css">
@@ -34,12 +57,17 @@
 
 	<!--- content goes inside here --->
 	<div id="all-content">
-		<h1>Sample Heading - every page needs a H1</h1>
-		<h2>Sample Subheading</h2>
-		Sample Text
-		<div id="button1"> button type 1 </div>
-		<div id="button2"> button type 2 </div>
-		<div id="button3"> button type 3 </div>
+		<div id="main-image-move">
+			<div id="move-header">
+				<h1>
+				&nbsp; Queen<br>
+				Orchards
+				</h1>
+			</div>
+			<div id="image-scale">
+				<img src="GoldenDelicious.png" alt="Golden Delicious Apple" sizes="100vw" style="height: 100%; width: 100%; object-fit: contain"/>
+			</div>
+		</div>
 	</div>
 	
 </body>
