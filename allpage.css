@@ -3,7 +3,7 @@
 
 /*Style that all the pages share, including body, header, and links*/
 
-/*body of page, including background and font*/
+*body of page including font*/
 body {
   margin: 0;
   padding: 0;
@@ -13,15 +13,23 @@ body {
 	font-style: normal;
 	font-size: 24px;
 	color: black;
-	background-image: url("Paper.png");
-	background-size: 1500px;
-	background-repeat: no-repeat;
-    left: 0;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 0;
-	background-attachment: fixed;
+}
+
+/*add background gradient*/
+body:before {
+  content: "";
+  display: block;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -10;
+  background-image: url("Paper.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 /*margin of content (non-header information) - its 30px when the header is collapsed, 60 when not*/
