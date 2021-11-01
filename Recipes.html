@@ -9,9 +9,26 @@
 <link rel="stylesheet" href="https://use.typekit.net/cev6nlr.css">
 <meta name="keywords" content="apple, apple orchard, pick your own, queen orchards, boston apples, recipies, cooking, apple pie, applesauce, pie, apple crisp, crisp, caramel apples" />
 </head>
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
 <style>
 	li.recipe {
-		display: contents;
+		display: list-item;
+		list-style-position: inside;
+		
+	}
+	#instruction_list li{
+		list-style-type: decimal;
+		padding: 5px;
+	}
+	.baked_good:hover{
+		color: #fff;
+		cursor:pointer;
+	}
+	.ingredients,.instructions{
+		font-size: larger;
 	}
 </style>
 
@@ -43,15 +60,17 @@
 		<h2 style = "font-weight: bold;">Our selection of Apples are perfect for delicious desserts! Here are some of our favorites:</h2>
 		<body>
 		
-			<h3>Apple Pie</h3>
-			<h4 id = pie_list >Best Apples for this Recipe: Honey Crisp, Granny Smith, Gala</h4>
-			<ul class = pie_recipe>
+			<h3 class = baked_good id = apple_p >Apple Pie</h3>
+			<div class = pie_recipe>
+				<h4 id = pie_list >Best Apples for this Recipe: Honey Crisp, Granny Smith, Gala</h4>
+				<ul>
+				<p class = ingredients> Ingredients</p>
 				<p>Crust:</p>
 				<li class = recipe >1 box (14.1 oz) refrigerated
 					Pillsbury™ Pie Crusts (2
 					Count), softened as directed
 					on box</li>
-				<p>Filling</p>	
+				<p>Filling:</p>
 					<li class = recipe>6 cups thinly sliced, peeled
 					apples (6 medium)</li>
 					<li class = recipe>3/4 cup sugar</li>
@@ -61,20 +80,119 @@
 					<li class = recipe>1/4 teaspoon salt</li>
 					<li class = recipe>1/8 teaspoon ground nutmeg</li>
 					<li class = recipe>1 tablespoon lemon juice</li>
-			</ul>
+				</ul>
+				<ol id = instruction_list>
+					<p class = instructions >Instructions</p>
+					<li class= recipe>&nbsp; Heat oven to 425°F. Place 1 pie crust in ungreased 9-inch glass pie plate. Press firmly against side and bottom.
+					<li class = recipe>&nbsp; In large bowl, gently mix filling ingredients; spoon into crust-lined pie plate. Top with second crust. Wrap excess top crust under bottom crust edge, pressing edges together to seal; flute. Cut slits or shapes in several places in top crust.</li>	
+					<li class = recipe>&nbsp; Bake 40 to 45 minutes or until apples are tender and crust is golden brown. Cover edge of crust with 2- to 3-inch wide strips of foil after first 15 to 20 minutes of baking to prevent excessive browning. Cool on cooling rack at least 2 hours before serving.</li>
+				</ol>
+				<p><a href = https://www.pillsbury.com/recipes/perfect-apple-pie/1fc2b60f-0a4f-441e-ad93-8bbd00fe5334 target = "_blank">Recipe by Pillsbury</a></p>
+			</div>
+
+			<h3 class = baked_good id = apple_s >Applesauce</h3>
+			<div class = sauce_recipe>
+				<h4 id = sauce_list>Best Apples for this Recipe: Golden Delicious, Honey Crisp</h4>
+				<ul>
+				<p class = ingredients> Ingredients</p>
+					<li class = recipe >4 apples - peeled, cored and chopped</li>
+					<li class = recipe>3/4 cup water</li>
+					<li class = recipe>1/4 cup white sugar</li>
+					<li class = recipe>1/2 teaspoon ground cinnamon</li>
+				</ul>
+				<ol id = instruction_list>
+					<p class = instructions >Instructions</p>
+					<li class= recipe>&nbsp;In a saucepan, combine apples, water, sugar, and cinnamon. 
+					<li class = recipe>&nbsp;Cover, and cook over medium heat for 15 to 20 minutes, or until apples are soft. </li>	
+					<li class = recipe>&nbsp;Allow to cool, then mash with a fork or potato masher.</li>
+				</ol>
+				<p><a href = https://www.allrecipes.com/recipe/51301/sarahs-applesauce/ target = "_blank">Recipe by AllRecipes</a></p>
+
+				
+			</div>
+		
+			<h3 class = baked_good id = apple_ca>Caramel Apples</h3>
+			<div class = caramel_recipe>
+				<h4 id = caramel_list>Best Apples for this Recipe: Granny Smith, Honey Crisp</h4>
+				<ul>
+				<p class = ingredients> Ingredients</p>
+					<li class = recipe >8–9 cold apples</li>
+					<li class = recipe>1 and 3/4 cups (420ml) heavy cream</li>
+					<li class = recipe>1 cup (240ml) light corn syrup</li>
+					<li class = recipe>2 cups (400g) packed light or dark brown sugar</li>
+					<li class = recipe>1/4 cup (4 Tablespoons; 60g) unsalted butter, at room temperature</li>
+					<li class = recipe>1/2 teaspoon salt</li>
+					<li class = recipe>1/2 teaspoon pure vanilla extract</li>
+				</ul>
+				<ol id = instruction_list>
+					<p class = instructions >Instructions</p>
+					<li class= recipe>&nbsp;Prep the apples: Rinse the apples with water, then wipe completely dry. Removing the slippery waxy coating will help the caramel seal to the apple. Remove the apple stem and insert a caramel apple stick about 3/4 down into the apple.
+					<li class = recipe>&nbsp;Line a large baking sheet with a silicone baking mat (preferred) or grease the pan with butter. Caramel usually sticks to parchment or wax paper.</li>	
+					<li class = recipe>&nbsp;Make the caramel: Combine the heavy cream, corn syrup, brown sugar, butter, and salt in a 3-quart heavy-duty saucepan over medium heat. Do not turn the temperature up or down– keep at medium the entire time the caramel cooks. Stir constantly with a wooden spoon until the butter is melted. Once melted, brush down the sides of the pan with a water-moistened pastry brush and attach a candy thermometer to the pan, making sure the bulb is not touching the bottom of the pan (as you’ll get an inaccurate reading).</li>
+					<li class = recipe>&nbsp;Without stirring, let the mixture cook and bubble until it reaches 235°F (113°C). Some readers have been cooking to 240°F (116°C) and saying the caramel sticks much better to the apples that way. Stick with anywhere between 235°F – 240°F. Reaching this temperature should take about 15 – 20 minutes, though don’t use time as your guide because it depends on your stove. Don’t be alarmed if your caramel is taking longer, just use the candy thermometer as your guide. The temperature will heat up slowly, then move quickly, so keep your eye on the pot. Once at 235°F – 240°F, remove caramel from heat and stir in the vanilla. Avoid over-stirring which can create air bubbles in the caramel (and then on the apple). Allow caramel to cool for 10-15 minutes until slightly thickened. If caramel is too thin to coat apples, let it cool and thicken for 5-10 minutes longer.</li>
+					<li class = recipe>&nbsp;Dip the apples: Holding the caramel apple stick, dip the apple into the warm caramel, tilting the pot as needed to coat all sides of the apple. Lift the apple up and swirl it around or gently tap it against the side of the pot to let excess caramel drip off. Place coated apple on prepared pan. Repeat with remaining apples. Enjoy immediately or allow caramel to set, about 45-60 minutes. If you want to wrap the caramel apples in cellophane treat bags for travel/gifting, wait until the caramel has completely set.</li>
+					<li class = recipe>&nbsp;If desired, you can add toppings. Immediately after coating in caramel and before the caramel sets, roll the caramel dipped apples in finely chopped nuts, toffee pieces, mini M&Ms, sprinkles, or coconut. You can even drizzle with melted chocolate or white chocolate, too.</li>
+					<li class = recipe>&nbsp;For displaying or serving, I recommend placing on wax paper or another nonstick surface. Even when the caramel has completely set, caramel apples may slightly stick to a serving dish. To eat a caramel apple, you can bite right into it or sit it upright on a cutting board and cut slices around the stick. (Or pull out the stick and slice.) These are great for sharing!</li>
+					<li class = recipe>&nbsp;Loosely cover and store the leftover dipped apples in the refrigerator for up to 1 week.</li>
+				</ol>
+				<p><a href = https://sallysbakingaddiction.com/homemade-caramel-apples/ target = "_blank">Recipe by Sally's Baking Addiction</a></p>
+
+				
+			</div>
+		
+			<h3 class = baked_good id = apple_cr>Apple Crisp</h3>
+			<div class = crisp_recipe>
+				<h4 id = crisp_list>Best Apples for this Recipe: Granny Smith, Honey Crisp, Golden Delicious </h4>
+				<ul>
+				<p class = ingredients> Ingredients</p>
+					<li class = recipe >6 apples, peeled and chopped</li>
+					<li class = recipe>2 Tbsp granulated sugar</li>
+					<li class = recipe>1 3/4 tsp ground cinnamon, divided</li>
+					<li class = recipe>1 1/2 tsp lemon juice</li>
+					<li class = recipe>1 cup light brown sugar</li>
+					<li class = recipe>3/4 cup old fashioned oats</li>
+					<li class = recipe>3/4 cup all-purpose flour</li>
+					<li class = recipe>1/2 cup cold unsalted butter, diced into small cubes</li>
+					<li class = recipe>pinch of kosher salt</li>
+				</ul>
+				<ol id = instruction_list>
+					<p class = instructions >Instructions</p>
+					<li class= recipe>&nbsp;Preheat oven to 350 F degrees.  Butter an 8x8 baking dish, or spray with non-stick cooking spray.  Set aside.</li>
+					<li class= recipe>&nbsp;In a mixing bowl, add chopped apples, granulated sugar, 3/4 tsp of the cinnamon and lemon juice.  Stir to combine, then transfer to prepared baking dish.</li>
+					<li class= recipe>&nbsp;In a separate mixing bowl, add topping ingredients (brown sugar, oats, flour, 1 tsp cinnamon, salt, and diced cold butter).  Use a pastry cutter to cut the butter into the oat mixture, using a slight downward twisting motion, until mixture resembled pea-sized crumbs.  Alternatively, you can use two forks or even your hands to cut butter into the mixture.</li>	
+					<li class= recipe>&nbsp;Spread topping over apples in baking dish, and gently pat to even it out.  Bake 40-50 minutes, until golden brown and bubbly.</li>	
+					<li class= recipe>&nbsp;Serve warm and enjoy!</li>	
+				</ol>
+				<p><a href = https://www.thechunkychef.com/old-fashioned-easy-apple-crisp/ target = "_blank">Recipe by The Chunky Chef</a></p>
+
+				
+			</div>
 			
-		
-			<h3>Applesauce</h3>
-			<h4 id = sauce_list>Best Apples for this Recipe: Golden Delicious, Honey Crisp</h4>
-		
-			<h3>Caramel Apples</h3>
-			<h4 id = caramel_list>Best Apples for this Recipe: Granny Smith, Honey Crisp</h4>
-		
-			<h3>Apple Crisp</h3>
-			<h4 id = crisp_list>Best Apples for this Recipe: Granny Smith, Honey Crisp, Golden Delicious </h4>
 		
 		</body>
 	</div>
-	
+<script language = "javascript">
+	$(document).ready(function(){
+		$(".pie_recipe").hide();
+		$(".sauce_recipe").hide();
+		$(".caramel_recipe").hide();
+		$(".crisp_recipe").hide();
+
+		$("#apple_p").click(function(){
+			$(".pie_recipe").toggle();
+		});
+		$("#apple_s").click(function(){
+			$(".sauce_recipe").toggle();
+		});
+		$("#apple_ca").click(function(){
+			$(".caramel_recipe").toggle();
+		});
+		$("#apple_cr").click(function(){
+			$(".crisp_recipe").toggle();
+		});
+
+
+	});
+</script>	
 </body>
 </html>
