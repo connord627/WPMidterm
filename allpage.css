@@ -164,7 +164,7 @@ li:first-child {
 }
 
 /*changes the color of the logo and instagram when hovering*/
-#ig:hover, #logo:hover {
+#ig:hover, .logo:hover {
 		filter: invert(100%); 
 		-webkit-filter: invert(100%);
 }
