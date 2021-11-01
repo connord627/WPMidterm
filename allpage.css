@@ -3,7 +3,7 @@
 
 /*Style that all the pages share, including body, header, and links*/
 
-*body of page including font*/
+/*body of page including font*/
 body {
   margin: 0;
   padding: 0;
@@ -129,7 +129,7 @@ li:first-child {
   .nav-menu li {
     display: block;
   }
-  #content{
+  #page-content{
     margin: 60px;	
   }
 }
