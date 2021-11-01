@@ -9,6 +9,11 @@
 <link rel="stylesheet" href="https://use.typekit.net/cev6nlr.css">
 <meta name="keywords" content="apple, apple orchard, pick your own, queen orchards, boston apples, recipies, cooking, apple pie, applesauce, pie, apple crisp, crisp, caramel apples" />
 </head>
+<style>
+	li.recipe {
+		display: contents;
+	}
+</style>
 
 <body>
 	<!--- header bar --->
@@ -35,20 +40,38 @@
 	<!--- Actual page content, put code inside here --->
 	<div id="all-content">
 		<h1>Recipes</h1>
-		<h3 style = "font-weight: bold;">Our selection of Apples are perfect for delicious desserts! Here are some of our favorites:</h2>
+		<h2 style = "font-weight: bold;">Our selection of Apples are perfect for delicious desserts! Here are some of our favorites:</h2>
 		<body>
 		
 			<h3>Apple Pie</h3>
-			<h4>Best Apples for this Recipe: Honey Crisp, Granny Smith, Gala</h4>
+			<h4 id = pie_list >Best Apples for this Recipe: Honey Crisp, Granny Smith, Gala</h4>
+			<ul class = pie_recipe>
+				<p>Crust:</p>
+				<li class = recipe >1 box (14.1 oz) refrigerated
+					Pillsbury™ Pie Crusts (2
+					Count), softened as directed
+					on box</li>
+				<p>Filling</p>	
+					<li class = recipe>6 cups thinly sliced, peeled
+					apples (6 medium)</li>
+					<li class = recipe>3/4 cup sugar</li>
+					<li class = recipe>2 tablespoons all-purpose
+						flour</li>
+					<li class = recipe>3/4 teaspoon ground cinnamon</li>
+					<li class = recipe>1/4 teaspoon salt</li>
+					<li class = recipe>1/8 teaspoon ground nutmeg</li>
+					<li class = recipe>1 tablespoon lemon juice</li>
+			</ul>
+			
 		
 			<h3>Applesauce</h3>
-			<h4>Best Apples for this Recipe: Golden Delicious, Honey Crisp</h4>
+			<h4 id = sauce_list>Best Apples for this Recipe: Golden Delicious, Honey Crisp</h4>
 		
 			<h3>Caramel Apples</h3>
-			<h4>Best Apples for this Recipe: Granny Smith, Honey Crisp</h4>
+			<h4 id = caramel_list>Best Apples for this Recipe: Granny Smith, Honey Crisp</h4>
 		
 			<h3>Apple Crisp</h3>
-			<h4>Best Apples for this Recipe: Granny Smith, Honey Crisp, Golden Delicious </h4>
+			<h4 id = crisp_list>Best Apples for this Recipe: Granny Smith, Honey Crisp, Golden Delicious </h4>
 		
 		</body>
 	</div>
