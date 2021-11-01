@@ -37,10 +37,6 @@ body:before {
   margin: 30px;	
 }
 
-#about_content{
-  margin: 20px;
-}
-
 /*the parent of the navbar*/
 .nav {
   border-bottom: 1px solid black;
