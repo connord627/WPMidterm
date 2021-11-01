@@ -2,72 +2,129 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Queen Orchards: A Pick Your Own Apple Destination</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 	h1{
 		font-size: 12vw;
 		font-weight: 400;
 		line-height: 1.2;
 	}
+	
 	#main-image-move{
 		position: relative;
 		top: -49vw;
 		left: 2vw;
 		overflow: hidden;
 	}
+	
 	#image-scale{
 		max-width: 38%;
 		padding: 1%;
 		position: relative;
 		z-index: 2;
 	}
+	
 	#move-header{
 		position: relative;
 		top: 42vw;
 		left: 25vw;
 		z-index: 1;
 	}
+	
 	#next-content{
 		width: 70vw;
 		margin: auto;
 		position: relative;
 		top: -53vw;
+	}
+	
+	#tagline{
 		text-align: justify;
-        	text-justify: inter-word;
+        text-justify: inter-word;
 		text-align-last: center;
-		word-spacing: 1vw;
+	}
+	
+	#button-box{
+		display: flex;
+  		justify-content: space-between;
+	}
+	
+	@media only screen and (max-width: 1100px) {
+		#button-box{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+	}
+	
+	#button1{
+		background-image: url("button1.png");
+		background-size: 220px;
+		line-height: 17px;
+		text-align: center;
+		height: 50px;
+		width: 220px;
+		border-radius: 14px;
+		box-sizing: border-box;
+		padding: 12px;
+		margin-top: 6px;
+	}
+
+	#button2{
+		background-image: url("button2.png");
+		background-size: 220px;
+		line-height: 17px;
+		text-align: center;
+		height: 50px;
+		width: 220px;
+		border-radius: 14px;
+		box-sizing: border-box;
+		padding: 12px;
+		margin-top: 6px;
+	}
+
+	#button3{
+		background-image: url("button3.png");
+		background-size: 220px;
+		line-height: 17px;
+		text-align: center;
+		height: 50px;
+		width: 220px;
+		border-radius: 14px;
+		box-sizing: border-box;
+		padding: 12px;
+		margin-top: 6px;
 	}
 </style>
 <link href="allpage.css" rel="stylesheet" type="text/css">
-<link rel="stylesheet" href="https://use.typekit.net/cev6nlr.css">
+<link rel="stylesheet" href="css/https://use.typekit.net/cev6nlr.css">
+<title>test</title>
 </head>
 
 <body>
 	
-	<!--- header bar --->
+<!--- header bar --->
 	<nav class="nav">
-		<input type="checkbox" id="nav-checkbox" class="nav-checkbox">
-			<label for="nav-checkbox" class="nav-toggle">
-			<img src="ham.png" width="25px" class="hamburger" alt="Hamburger Menu"/>
-			<img src="x.png" width="25px" class="close" alt="Close Menu"/>
-		</label>
+	  <input type="checkbox" id="nav-checkbox" class="nav-checkbox">
+	  <label for="nav-checkbox" class="nav-toggle">
+		<img src="ham.png" width="25px" class="hamburger" alt="Hamburger Menu"/>
+		<img src="x.png" width="25px" class="close" alt="Close Menu"/>
+	  </label>
 
-	  	<ul class="nav-menu">
-			<li>
-				<a href="index.html"><img src="QueenOrchards.png" alt="Queen Orchards Logo" width="40px" class="logo"/></a>
-			</li>
-			<li><a href="About.html">About</a></li>
-			<li><a href="Reserve.html">Reserve</a></li>
-			<li><a href="Directions.html">Directions</a></li>
-			<li><a href="Varieties.html">Varieties</a></li>
-			<li><a href="Contact.html">Contact</a></li>
-			<li><a href="Recipes.html">Recipes</a></li>
-		</ul>
+	  <ul class="nav-menu">
+		<li>
+		  <a href="index.html"><img src="QueenOrchards.png" alt="Queen Orchards Logo" width="40px" class="logo"/></a>
+		</li>
+		<li><a href="About.html">About</a></li>
+		<li><a href="Reserve.html">Reserve</a></li>
+		<li><a href="Directions.html">Directions</a></li>
+		<li><a href="Varieties.html">Varieties</a></li>
+		<li><a href="Contact.html">Contact</a></li>
+		<li><a href="Recipes.html">Recipes</a></li>
+	  </ul>
 	</nav>
 
 	<!--- content goes inside here --->
-	<div id="all-content">
+	<div id="content">
 		<div id="main-image-move">
 			<div id="move-header">
 				<h1>
@@ -80,7 +137,20 @@
 			</div>
 		</div>
 		<div id="next-content">
-			<h2>a pick-your-own appple orchard just south of boston</h2>
+			<div id="tagline">
+				<h2>a pick your own appple orchard just south of boston</h2>
+			</div>
+			<div id="button-box">
+				<div id="button1">
+					learn about us
+				</div>
+				<div id="button2">
+					reserve a ticket
+				</div>
+				<div id="button3">
+					see our varieties
+				</div>
+			</div>
 		</div>
 	</div>
 	
