@@ -163,7 +163,22 @@
 		//document.getElementById("text").innerHTML = strout;
 		
 		
+		function arrayAdd(){
+			function VisitType(name){
+				this.name = name;
+			}
 
+			visitNames = new Array(
+				new VisitType('Apple Orchard Tour: '),
+				new VisitType('Apple Picking: '),
+				new VisitType('Visiting the Store: ')
+			);
+
+			for(i=0; i< visitNames.length; i++){
+				document.getElementById("visit" + i).innerHTML = visitNames[i].name;
+			}
+
+		}
 
 	</script>
 	
@@ -192,9 +207,10 @@
 				<option value="5pm">5:00pm</option>
 			</select> <br> <br>
 			What will you be doing on your visit?:<br>
-			Apple Orchard Tour: <input type="checkbox" style="display: inline;" name="tour"> <br>
-			Apple Picking: <input type="checkbox" style="display: inline;" name="picking"> <br>
-			Visiting the Store: <input type="checkbox" style="display: inline;" name="store"> <br> <br>
+			
+			<div id="visit0"></div> <input type="checkbox" style="display: inline;" name="tour"> <br>
+			<div id="visit1"></div> <input type="checkbox" style="display: inline;" name="picking"> <br>
+			<div id="visit2"></div> <input type="checkbox" style="display: inline;" name="store"> <br> <br>
 
 
 			How many total people will you be with?:
